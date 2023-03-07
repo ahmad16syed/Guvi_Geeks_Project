@@ -1,0 +1,60 @@
+
+body {
+    font-family: 'Montserrat';
+}
+
+p {
+    color: #8f8f8f;
+}
+
+/* Containers */
+
+.container-fluid {
+    padding: 3% 10%;
+}
+
+.container{
+    width: 40%;
+}
+
+/* Navigation Bar */
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-brand {
+    font-family: 'Ubuntu';
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    padding: 1rem;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-weight: 300;
+    color: white;
+}
+
+/* SECTIONS */
+
+.colored-section {
+    background-color: #3E54AC;
+}
+
+.button{
+    border-top-left-radius: 1.5rem; 
+    border-bottom-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem; 
+    border-bottom-right-radius: 1.5rem;
+}
+ 
+.login-img{
+    width: 50%;
+    height: 50%;
+} 
+

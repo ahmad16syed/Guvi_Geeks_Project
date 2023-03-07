@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="css/profile.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f8d2e1cbe3.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+    <title>Profile</title>
+</head>
+<body>
+    <section class="colored-section" id="title">
+
+        <div class="container-fluid">
+
+            <!-- Nav Bar -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html">Lorem</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#about">Messages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#about">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">More</a>
+                            <ul class="dropdown-menu bg-dark">
+                                <li><a class="dropdown-item" href="#scrollspyHeading3">Action 1</a></li>
+                                <li><a class="dropdown-item" href="#scrollspyHeading4">Action 2</a></li>
+                                <li><a class="dropdown-item" href="#scrollspyHeading5">Action 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="login.html">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        
+        </div>
+    
+    </section>
+    <!-- <section>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+            <a class="navbar-brand js-scroll-trigger" href="index.html">Lorem Ipsum</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+            </div>
+            </div>
+        </nav> -->
+        </section>
+            <!-- Profile Content -->
+            <div class="container mb-5 mt-5">
+                <div class="row">
+                    <div class="col-md-6 mx-auto">
+                        <h1 class=" mb-4">Profile</h1>
+                        <div class="card ">
+                            <div class="card-body">
+                                <p class="card-text"><img src="assets/profile.jpg" class="profile-pic" alt="Profile Picture" id="profile-pic"></p>
+                                <h5 class="card-title">Name: <span id="name"></span></h5>
+                                <p class="card-text">Email: <span id="email"></span></p>
+                                <p class="card-text">Date of Birth: <span id="d-o-b"></span></p>
+                                <p class="card-text">Bio: <span id="bio"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        <section class="colored-section p-md-5">
+            <div class="container mt-5">
+                <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Profile Picture</h3>
+                        </div>
+                        <div class="card-body">
+                            <form id="upload-form">
+                                <div class="form-group mt-3">
+                                    <input type="file" name="profile-pic" class="form-control-file">
+                                </div>
+                            <button type="submit" class="btn btn-primary">Upload</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Edit Profile</h3>
+                        </div>
+                    <div class="card-body">
+                        <form id="profile-form">
+                            <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="d-o-b">Date of Birth</label>
+                            <input type="date" name="d-o-b" id="d-o-b" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bio">Bio</label>
+                            <textarea name="bio" id="bio" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="interests">Interests</label>
+                            <select name="interests[]" id="interests" class="form-control" multiple>
+                                <option value="coding">Coding</option>
+                                <option value="reading">Reading</option>
+                                <option value="music">Music</option>
+                                <option value="sports">Sports</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Update</button>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+    <script src="js/profile.js"></script>
+</body>
+</html>
