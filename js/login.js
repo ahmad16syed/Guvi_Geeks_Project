@@ -2,7 +2,7 @@ $(document).ready(function() {
     $('.login-form').submit(function(e) {
       e.preventDefault();
       var email = $('.email').val();
-      var password = $('.assword').val();
+      var password = $('.password').val();
       $.ajax({
         type: 'POST',
         url: 'php/login.php',
