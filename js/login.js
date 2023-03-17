@@ -1,20 +1,26 @@
 
 $(document).ready(function() {
-  $('#login-form').submit(function(e) {
-    // e.preventDefault();
+
+  // validate login form on submit
+  $('#login-form').click(function() {
+
     var email = $('#email').val();
     var password = $('#password').val();
-    $.ajax({
-      type: 'POST',
-      url: 'php/login.php',
-      data: {email: email, password: password},
-      success: function(data) {
-        if (data == "success") {
-          window.location.href = "profile.php";
-        } else {
-          alert(data);
-        }
-      }
-    });
+
+    // Check if the email is empty
+    if (email == "") {
+      alert("Please enter your email.");
+      return false;
+    }
+
+    // Check if the password is empty
+    if (password == "") {
+      alert("Please enter your password.");
+      return false;
+    }
+
+    // If all validations are successful, submit the form
+    window.location.href = 'profile.html';
   });
+
 });
