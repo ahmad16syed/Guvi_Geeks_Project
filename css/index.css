@@ -1,0 +1,93 @@
+
+body {
+    font-family: 'Montserrat';
+}
+
+h1 {
+    font-weight: 700;
+}
+
+p {
+    color: #8f8f8f;
+}
+
+/* Containers */
+
+.container-fluid {
+    padding: 3% 10%;
+}
+
+.body-container-fluid {
+    padding: 3% 10%;
+    background-image: url("../assets/back_img3.jpg");
+    display:flex;
+    background-position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: fill;
+}
+
+/* Navigation Bar */
+
+.navbar-brand {
+    font-family: 'Ubuntu';
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-brand:hover{
+    color: white;
+    text-shadow: 7px 6px 5px #000000;;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-item:hover{
+    color: white;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+
+.nav-link {
+    font-weight: 300;
+    color: white;
+}
+
+.nav-link:hover {
+    font-weight: 300;
+    color: white;
+}
+
+/* SECTIONS */
+
+.colored-section {
+    background-color: #3E54AC;
+}
+
+.buttons {
+    margin: 5% 3% 5% 0;
+}
+
+/* BUTTON CSS */
+
+.btn {
+    background: #b700ff;
+    background-image: linear-gradient(to bottom, #b700ff, #ff0066);
+    border-radius: 60px;
+    text-shadow: 7px 6px 5px #000000;
+    font-family: 'Montserrat';
+    color: #ffffff;
+    font-size: 30px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #64018a;
+    color: #ffffff;
+    font-style: italic;
+}
